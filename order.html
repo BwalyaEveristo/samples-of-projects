@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Ch04-05 pizzacalc Vesion</title>
+    <link> rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <h1>&#x1f355; pizza Calculater</h1>
+    <p>Calculates the number of pizzas you&rsquo;77 need.</p>
+    <p>
+        number of students: <input type="number" id="noOfStudentsText" value="0">
+    </p>
+
+    <p>
+        input type="button" value="Calculate pizzas" onclick="dopizzaCalc();"></button>
+    </p>
+
+    <p id="resultParagraph">
+        Result displayed here.
+    </p>
+
+    <script>
+        function doPizzaCalc(){
+
+            var noOfStudentsTextElement = document.getElementById("noOfStudentsText");
+            var noOfStudentsText = noOfStudentsTextElement.value;
+            var noOfStudents = Number(noOfStudentsText);
+            var noOfPizzas = noOfStudents/ 1.5;
+            var resultElement = document.getElementById("resultParagraph");
+            resultElement.innerText = "You need" + noOfPizza + "pizza";
+        }
+    </script>
+</body>
+
+</html>
